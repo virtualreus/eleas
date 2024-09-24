@@ -1,0 +1,575 @@
+@media screen and (min-width: 1360px) and (max-width: 2000px) {
+    #Navigation {
+        display: none !important;
+    }
+
+    #Navigation-mobile {
+        display: block !important;
+    }
+
+    #leftBarMain {
+        width: 30% !important;
+    }
+    .greetH1 {
+        font-size: 35px;
+    }
+
+    .recipe_prof_h1 {
+        font-size: 30px;
+    }
+
+    .Profilename1 {
+        font-size: 30px;
+    }
+
+    .Profilename {
+        font-size: 30px;
+    }
+
+    .welcome-button2 {
+        width: 70%;
+        font-size: 12px;
+        padding: 7px 3px;
+    }
+
+    .recipe_prof_h3 {
+        font-size: 14px;
+    }
+
+    .recipeEchoName {
+        font-size: 20px;
+    }
+
+    .recipeEchoLink {
+        font-size: 20px;
+    }
+
+    .recipeEchoCols {
+        font-size: 13px;
+    }
+
+    .recipeEchoName2 {
+        font-size: 20px;
+        margin-left: 8vh;
+        font-weight: bolder;
+    }
+
+    #algoEdit {
+        font-size: 14px;
+    }
+
+    .navMargin {
+        height: 38px;
+        font-size: 10px;
+
+        margin-left: 5px;
+        margin-right: 3px;
+
+        padding-left: 12px;
+        padding-right: 12px;
+        letter-spacing: 2px;
+    }
+
+    .descBlock {
+        font-size: 74%;
+    }
+
+
+
+    .login_input {
+        width: 300px;
+    }
+
+    .authDesc {
+        font-size: 17px;
+    }
+
+
+    .group {
+        width: 325px;
+    }
+
+    .bar {
+        width: 325px;
+
+    }
+
+    #regInput, #logInput {
+        width: 325px;
+    }
+
+    #mainBlock {
+        height: 740px;
+    }
+
+
+    .textingDesc  {
+        font-size: 15px;
+    }
+
+    .textingDescMain {
+        font-size: 25px;
+    }
+
+    .nonUnderline {
+        font-size: 13px;
+    }
+
+    #registerImgInfo {
+        width: 68%;
+        height: 77%;
+    }
+
+    #newListName {
+        width: 45%;
+    }
+
+    #viewCheckList {
+        font-size: 12px;
+    }
+
+    #deleteListMain {
+        font-size: 12px;
+    }
+
+    #saveListMain {
+        font-size: 12px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 900px) and (max-width: 1360px) {
+    #Navigation {
+        display: none !important;
+    }
+
+    #Navigation-mobile {
+        display: block !important;
+    }
+
+    .menu-main a {
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+
+
+    #leftBarMain {
+        width: 30% !important;
+    }
+    .greetH1 {
+        font-size: 32px;
+    }
+
+    #profileGreet {
+        height: 95px;
+    }
+
+    .recipe_prof_h1 {
+        font-size: 28px;
+    }
+
+    .Profilename1 {
+        font-size: 25px;
+    }
+
+    .Profilename {
+        font-size: 25px;
+    }
+
+    .imageVerification {
+        margin-left: 4%;
+        margin-top: 4px;
+        width: 12%;
+    }
+
+    .emoji {
+        margin: 0;
+        font-size: 40px;
+    }
+
+    .minirecipes_categories {
+        flex-direction: column;
+    }
+
+
+    .descBlock {
+        font-size: 70%;
+    }
+
+    .welcome-button2 {
+        width: 65%;
+        font-size: 10px;
+        padding: 5px 5px;
+    }
+
+    .navMargin {
+        height: 35px;
+        font-size: 10px;
+
+        margin-left: 5px;
+        margin-right: 3px;
+
+        padding-left: 10px;
+        padding-right: 10px;
+        letter-spacing: 2px;
+
+        line-height: 0;
+    }
+
+    #navButtonsMain {
+        margin-bottom: 3%;
+    }
+
+
+    .recipe_prof_h3 {
+        font-size: 12px;
+    }
+
+
+    .recipeEchoName {
+        font-size: 17px;
+        font-weight: bolder;
+    }
+
+
+    .recipeEchoName2 {
+        font-size: 20px;
+        margin-left: 7vh;
+        font-weight: bolder;
+    }
+
+    #leftBar {
+        width: 23%;
+    }
+
+    #rightBar {
+        width: 23%;
+    }
+
+    #algoEdit {
+        font-size: 13px;
+        width: 80%;
+    }
+
+
+    .viewRecipe {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+
+    .deleteRecipe {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+
+    #saveEdits {
+        padding: 8px 30px;
+        font-size: 14px;
+    }
+
+
+    #EditMain {
+        padding-bottom: 8%;
+    }
+
+     .propNameRecMain {
+        font-size: 25px;
+    }
+
+
+    .fieldRecipeEdit {
+        width: 250px;
+    }
+
+    .nameOfIngred {
+        width: 280px;
+        padding: 11px;
+        font-size: 14px;
+        height: 45%;
+    }
+
+    .dozaOfIngred {
+        width: 80px;
+        padding: 11px;
+        font-size: 14px;
+        height: 45%;
+    }
+
+    #selectZOYSedit {
+        font-size: 13px;
+    }
+
+
+
+    .group {
+        width: 310px;
+    }
+
+    .bar {
+        width: 310px;
+
+    }
+
+    #regInput, #logInput {
+        width: 310px;
+    }
+
+    #mainBlock {
+        height: 720px;
+    }
+
+
+    .textingDesc     {
+        font-size: 12px;
+    }
+
+    .textingDescMain {
+        font-size: 22px;
+    }
+
+    .nonUnderline {
+        font-size: 11px;
+    }
+
+    .login_input {
+        width: 280px;
+    }
+
+    #registerImgInfo {
+        width: 70%;
+        height: 79%;
+    }
+
+
+    #newListName {
+        width: 40%;
+    }
+
+    #viewCheckList {
+        font-size: 10px;
+    }
+
+    #deleteListMain {
+        font-size: 10px;
+    }
+
+    #saveListMain {
+        font-size: 10px;
+    }
+
+    .mobileChecklistButtons {
+        margin-left: 3%;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 501px) and (max-width: 1000px) {
+    #Navigation {
+        display: none !important;
+    }
+
+    #Navigation-mobile {
+        display: block !important;
+    }
+    
+    #leftBarMain {
+        width: 30% !important;
+    }
+    .greetH1 {
+        font-size: 28px;
+    }
+
+    #profileGreet {
+        height: 85px;
+    }
+
+    .recipe_prof_h1 {
+        font-size: 23px;
+    }
+
+    .Profilename1 {
+        font-size: 21px;
+    }
+
+    .Profilename {
+        font-size: 21px;
+    }
+
+    .imageVerification {
+        margin-left: 2%;
+        margin-top: 2px;
+        width: 10%;
+    }
+
+    .emoji {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    .minirecipes_categories {
+        flex-direction: column;
+    }
+
+
+    .descBlock {
+        font-size: 60%;
+    }
+
+    .welcome-button2 {
+        width: 60%;
+        font-size: 4px;
+        padding: 3.5px 3.5px;
+    }
+
+    .navMargin {
+        height: 30px;
+        font-size: 8px;
+
+        margin-left: 4px;
+        margin-right: 2px;
+
+        padding-left: 8px;
+        padding-right: 8px;
+        letter-spacing: 1.5px;
+
+        line-height: 0;
+    }
+
+    #navButtonsMain {
+        margin-bottom: 2%;
+    }
+
+
+    .recipe_prof_h3 {
+        font-size: 9px;
+    }
+
+
+    .recipeEchoName {
+        font-size: 13px;
+        font-weight: bolder;
+    }
+
+
+    .recipeEchoName2 {
+        font-size: 13px;
+        margin-left: 6vh;
+        font-weight: bolder;
+    }
+
+    #leftBar {
+        width: 23%;
+    }
+
+    #algoEdit {
+        font-size: 10px;
+        width: 78%;
+    }
+
+
+    .viewRecipe {
+        padding: 6px 27px;
+        font-size: 11px;
+    }
+
+    .deleteRecipe {
+        padding: 6px 26px;
+        font-size: 14px;
+    }
+
+    #saveEdits {
+        padding: 6px 27px;
+        font-size: 11px;
+    }
+
+
+    #EditMain {
+        padding-bottom: 6%;
+    }
+
+    .propNameRecMain {
+        font-size: 22px;
+    }
+
+
+    .fieldRecipeEdit {
+        width: 240px;
+    }
+
+    .nameOfIngred {
+        width: 240px;
+        padding: 10px;
+        font-size: 12px;
+        height: 40%;
+    }
+
+    .dozaOfIngred {
+        width: 55px;
+        padding: 10px;
+        font-size: 12px;
+        height: 40%;
+    }
+
+    #selectZOYSedit {
+        font-size: 10px;
+    }
+
+    .group {
+        width: 300px;
+    }
+
+    .bar {
+        width: 300px;
+
+    }
+
+    #regInput, #logInput {
+        width: 300px;
+    }
+
+    #mainBlock {
+        height: 690px;
+    }
+
+
+    .textingDesc     {
+        font-size: 10px;
+    }
+
+    .textingDescMain {
+        font-size: 19px;
+    }
+
+    .nonUnderline {
+        font-size: 9px;
+    }
+
+    .login_input {
+        width: 270px;
+    }
+
+    #registerImgInfo {
+        width: 67%;
+        height: 75%;
+    }
+
+
+    .buttonNavProfile {
+        height: 35px;
+    }
+
+    .navMargin {
+        height: 30px;
+    }
+
+}
+

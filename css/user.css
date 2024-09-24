@@ -1,0 +1,804 @@
+.userPageTitle {
+    width: 87%;
+    height: 150px;
+    background: white;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.3%;
+    border-radius: 25px;
+
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    font-family: 'Nunito', sans-serif;
+
+    display: flex;
+    align-items: center;
+}
+
+.userPageHeader {
+    font-size: 55px;
+
+    background-image: linear-gradient(to right bottom, #1fc295 0%, #87f0d2 51%, #1fc295 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.userPageHeader_admin {
+    background: linear-gradient(rgba(135, 60, 255, 0.4), rgba(135, 60, 255, 0.0) 80%), linear-gradient(
+            -45deg, rgba(120, 155, 255, 0.9) 25%, rgba(255, 160, 65, 0.9) 75%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.userPageVerification {
+    margin-left: 2%;
+    width: 70px;
+    height: 70px;
+}
+
+.userPageTitleText {
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.userPageDescriptionBlock {
+    word-break: break-word;
+    padding: 0.5% 1%;
+    border-radius: 15px;
+    width: 22%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+    height: 65%;
+    margin-left: 3%;
+}
+
+#userPageData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Nunito', sans-serif;
+    background: white;
+    width: 65%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.5%;
+
+
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+}
+
+.userPageDataName {
+    text-align: center;
+    font-size: 40px;
+
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#pageUserAlls {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 200px;
+}
+
+.userDetailBlock {
+    background: white;
+    width: 29%;
+    height: 350px;
+    margin-left: 2.6%;
+
+    margin-top: 2%;
+    flex: 30%;
+    max-width: 30%;
+    transition: 0.2s;
+    font-family: 'Nunito', sans-serif;
+
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+
+    display: flex;
+    padding: 10px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: -webkit-center;
+    flex-direction: column;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.userDetailBlock:hover {
+    transform: scale(1.05);
+    background: #e6fff8;
+
+}
+
+.userDetailFaceIMG {
+    width: 160px;
+    height: 160px;
+}
+
+.userDetailDesc {
+    color: black;
+    text-decoration: underline;
+    margin-top: 1%;
+    font-size: 20px;
+    transition: 0.2s;
+}
+
+.userDetailName {
+    color: black;
+    font-size: 22px;
+    transition: 0.2s;
+}
+
+.userDetailDate {
+    color: gray;
+    margin-top: 1%;
+    transition: 0.2s;
+}
+
+.pageUserNone {
+    text-align: center;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    color: gray;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 2%;
+}
+
+#Navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-button-top {
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    border-right: 1px solid;
+}
+
+
+.menu-main {
+    border-radius: 15px;
+    list-style: none;
+    padding: 25px 0 5px;
+    text-align: center;
+    background: white;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+    content: "|";
+    color: black;
+    display: inline-block;
+    vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: black;}
+.menu-main a.current, .menu-main a:hover{color: #1fc295;}
+.menu-main a:before,
+.menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #1fc295;
+    transition: .3s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+@media (max-width: 550px) {
+    .menu-main {padding-top: 0;}
+    .menu-main li {display: block;}
+    .menu-main li:after {content: none;}
+    .menu-main a {
+        padding: 25px 0 20px;
+        margin: 0 30px;
+    }
+}
+
+#subButtonBlock {
+    margin-left: 10%;
+}
+
+.leftBarCountSubs {
+    color: gray;
+    word-break: break-all;
+    font-size: 14px;
+}
+
+.subButtonButton {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin: 5px 10px;
+    width: 100%;
+    font-size: 11px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    border: none;
+    cursor: pointer;
+}
+
+.subButtonButton:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    letter-spacing: 3px;
+}
+
+.subsBlock {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    height: 90%;
+    margin-left: 5%;
+}
+.subsElem {
+    color: gray;
+    flex-direction: column;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 45%;
+}
+
+.subsCount {
+    color: black;
+    font-size: 35px;
+}
+
+
+.createRecipe {
+    height: 60px;
+    font-size: 11px;
+    text-align: center;
+    margin: 4% auto auto;
+    cursor: pointer;
+
+    width: 50%;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    border: none;
+    font-weight: 700;
+}
+
+.createRecipe:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    letter-spacing: 3px;
+}
+
+#Recipes {
+    flex-direction: column;
+}
+
+.RecipesList_main {
+    width: 85%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.recipeBlock_profile {
+    flex: 33%;
+    max-width: 32%;
+    margin-left: 0.65%;
+    margin-right: 0.65%;
+    width: 32%;
+    height: 400px;
+    margin-top: 1.3%;
+    border: 8px solid rgb(159, 255, 225);
+
+    transition: 0.2s;
+    background-position: center;
+    background-size: cover;
+    /*background: linear-gradient(45deg, #cfecd0, #ffc5ca);*/
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 6%;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+.recipeBlock_profile:hover {
+    z-index: 15;
+    /*background: white;*/
+    transform: scale(1.05);
+}
+
+.recipesList_Details {
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+    width: 85%;
+    height: auto;
+    border-radius: 15px;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    word-break: break-all;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.recipesList_Details:hover {
+    transform: scale(1.05);
+}
+
+
+.recipesList_name {
+    word-break: break-word;
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.recipesList_desc {
+    font-size: 17px;
+}
+
+.recipesList_date {
+    font-size: 16px;
+    color: #d5d5d5;
+}
+
+#recipe_MainBlock {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 87%;
+    background: white;
+    margin: 1% auto;
+    height: auto;
+
+    padding: 1% 2%;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
+#newRecName {
+    border: none;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    font-family: Mulish, sans-serif;
+    outline: #1fc295;
+    font-weight: 800;
+    border-radius: 15px;
+    width: 55%;
+    margin-left: 1%;
+    font-size: 25px;
+    height: 40%;
+    padding: 0.5% 1%;
+}
+
+.newNameRec_span {
+    font-family: 'Nunito', sans-serif;
+    color: #1fc295;
+    font-size: 45px;
+    margin: 0 1%;
+}
+
+
+
+
+.field__wrapper {
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    position: relative;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.field__file {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+}
+
+.field__file-wrapper {
+    font-family: 'Nunito', sans-serif;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+
+
+.field__file-fake {
+    height: 60px;
+    width: calc(100% - 130px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 15px;
+    border: 1px solid #c7c7c7;
+    border-radius: 3px 0 0 3px;
+    border-right: none;
+}
+
+.RecH2 {
+    margin-bottom: 1.5%;
+    font-size: 40px;
+    color: #1fc295;
+}
+
+.logoRecPhoto {
+    border: 2px solid black;
+    width: 35%;
+    margin-bottom: 2%;
+}
+
+.field__file-button {
+    width: 130px;
+    height: 60px;
+    background: #1bbc9b;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+}
+
+
+
+.recipeParams {
+    box-shadow: 0 0 15px #6bc7ad;
+    width: 100%;
+    height: auto;
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid #1fc295;
+    border-radius: 15px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.paramsLine {
+    width: 80%;
+    display: flex;
+    margin-bottom: 2%;
+    justify-content: space-between;
+}
+
+.paramsRecElem {
+    font-size: 20px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#colsOfIngred, #colsOfSteps {
+    margin-top: 3%;
+    height: 40px;
+    width: 70px;
+    text-align: center;
+    box-shadow: 0 0 15px #6bc7ad;
+    font-family: Mulish, sans-serif;
+    padding: 15px;
+    border-radius: 13px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+
+#ingredsBlock {
+    margin-top: 1%;
+    display: inline-block;
+    width: 100%;
+}
+
+.mr_ingredStyle {
+    padding: 15px 10px;
+    width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #6bc7ad;
+    border: none;
+    outline: none;
+    font-family: Mulish, sans-serif;
+    font-size: 16px;
+}
+
+.ingBlockFlex {
+    float: left;
+    margin: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 6px #6bc7ad;
+    border: 1px solid #6bc7ad;
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.mr_kolvoStyle {
+    padding: 15px 10px;
+    width: 100px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px #6bc7ad;
+    border: none;
+    outline: none;
+    font-family: Mulish, sans-serif;
+    font-size: 16px;
+}
+
+.recminidesc {
+    font-size: 18px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+#recipeDescArea {
+    font-family: Mulish, sans-serif;
+    box-shadow: 0 0 15px #6bc7ad;
+    width: 80%;
+    height: 350px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: 20px;
+    resize: none;
+    outline: none;
+    border: none;
+}
+
+#recipeDescArea::-webkit-scrollbar {
+    width: 10px;
+}
+
+#recipeDescArea::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 10px;
+}
+
+#recipeDescArea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #5BCAFF, #55EFCB);
+}
+
+
+.stepMainBlock {
+     width: 100%;
+    
+    border: 1px solid #6bc7ad;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 1%;
+    box-shadow: 0 0 5px #6bc7ad;
+    margin-bottom: 1%;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gtRecipe {
+    text-decoration: none;
+    margin-left: 5%;
+
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 11px;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    border: none;
+}
+
+.gtRecipe:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    letter-spacing: 3px;
+}
+
+
+.getRecDescStyle {
+    font-family: Mulish, sans-serif;
+    box-shadow: 0 0 5px #6bc7ad;
+    width: 80%;
+    height: 300px;
+    resize: none;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+    padding: 15px;
+    font-size: 17px;
+}
+
+#saveRecipeEdits {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    border: none;
+    cursor: pointer;
+}
+
+#saveRecipeEdits:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    letter-spacing: 3px;
+}
+
+#stepsIdBlock {
+    width: 100%;
+}
+
+.stepBlockPhoto {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width: 45%;
+}
+
+.inputPhoto {
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    margin: 15px auto;
+}
+
+option {
+    font-size: 16px;
+    padding: 15px;
+}
+
+#selectRecipeType {
+    margin-top: 3%;
+    height: 40px;
+    box-shadow: 0 0 15px #6bc7ad;
+    outline: none;
+    border: none;
+    font-family: Mulish, sans-serif;
+    border-radius: 15px;
+    display: block;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.3;
+    padding: 0.6em 1.4em 0.5em 0.8em;
+    max-width: 100%;
+    box-sizing: border-box;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
+    background-repeat: no-repeat, repeat;
+    background-position: right 0.7em top 50%, 0 0;
+    background-size: 0.65em auto, 100%;
+}
+
+
+
+
+
+@media screen and (min-device-width : 200px) and (max-device-width : 500px) {
+    .findedBlock {
+        width: 75%;
+    }
+
+    .subsCount {
+        font-size: 25px!important;
+    }
+    .subsElem {
+        font-size: 15px!important;
+    }
+}

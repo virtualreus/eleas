@@ -1,0 +1,938 @@
+* {
+    -webkit-appearance: none;
+}
+
+
+#algoEdit {
+    resize: none;
+    width: 70%;
+    height: 60%;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 15px;
+    margin-top: 3%;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    outline: none;
+    border: none;
+}
+
+.AlgorithmMini {
+    flex-direction: column;
+}
+
+#selectZOYSedit {
+    margin-left: 10%;
+    box-shadow: 0 0 15px #6bc7ad;
+    outline: none;
+    border: none;
+    font-family: Mulish, sans-serif;
+    border-radius: 15px;
+
+    display: block;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.3;
+    padding: .6em 1.4em .5em .8em;
+    width: 20%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+
+.productsEching {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 5%;
+}
+
+#viewProducts {
+    display: flex;
+}
+
+#viewRecipeContent {
+    display: flex;
+}
+
+.algoEcho {
+    width: 70%;
+    margin-left: 5%;
+}
+
+#mainBlockProfile {
+    width: 60%;
+    margin-top: 2%;
+}
+
+.recipeNone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.recipeNoneH2 {
+    font-family: Mulish, sans-serif;
+    color: gray;
+}
+
+.recipeNoneText {
+    margin-top: 1%;
+    color: gray;
+    font-family: Mulish, sans-serif;
+    font-size: 20px;
+}
+
+
+#checkLists {
+    flex-direction: column;
+}
+
+.close-adding_2 {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    cursor: pointer;
+}
+
+.close-recipe {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    cursor: pointer;
+}
+
+
+.close-adding-5 {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    cursor: pointer;
+}
+
+#modalAddCheckLists {
+    background-color: white;
+    display: none;
+    position: fixed;
+    width: 580px;
+    height: 250px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 30px;
+    z-index: 999;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+#modalCreateRecipe {
+    background-color: white;
+    display: none;
+    position: fixed;
+    width: 580px;
+    height: 250px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 30px;
+    z-index: 999;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.addCheckList {
+    height: 60px;
+    font-size: 11px;
+    text-align: center;
+    margin: 4% auto auto;
+    cursor: pointer;
+
+
+    width: 50%;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    border: none;
+    font-weight: 700;
+}
+
+.addCheckList:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    letter-spacing: 3px;
+}
+
+
+
+#nameOfList {
+    -webkit-appearance: none;
+    border-radius: 15px;
+    width: 70%;
+    margin-top: 3%;
+    outline: none;
+    padding: 20px 17px;
+
+    box-shadow: 0 0 15px #6bc7ad;
+    font-family: Mulish, sans-serif;
+    border: none;
+    height: 10%;
+    font-size: 16px;
+}
+
+#name_Recipe {
+    -webkit-appearance: none;
+    border-radius: 15px;
+    width: 70%;
+    margin-top: 3%;
+    outline: none;
+    padding: 20px 17px;
+
+    box-shadow: 0 0 15px #6bc7ad;
+    font-family: Mulish, sans-serif;
+    border: none;
+    height: 10%;
+    font-size: 16px;
+}
+
+
+
+.listCont {
+    position: absolute;
+    width: 50%;
+    line-height: 0;
+    bottom: 25px;
+    right: 20px;
+    height: 42px;
+    font-size: 11px;
+    text-align: center;
+    margin: 4% auto auto;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    font-weight: 700;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    border: none;
+}
+
+
+.listCont:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    letter-spacing: 3px;
+}
+
+
+
+.createRecCont {
+    position: absolute;
+    width: 50%;
+    line-height: 0;
+    bottom: 25px;
+    right: 20px;
+    height: 42px;
+    font-size: 11px;
+    text-align: center;
+    margin: 4% auto auto;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    font-weight: 700;
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    border: none;
+}
+
+
+.createRecCont:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    letter-spacing: 3px;
+}
+
+#checkListsBlock {
+    width: 100%;
+}
+
+.checklistecho {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: Mulish, sans-serif;
+}
+
+.checklistrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+
+}
+
+.checklisttext {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipeEchoName {
+    text-align: center;
+}
+
+
+#EditCheckList {
+    padding-bottom: 5%;
+}
+
+
+
+.day {
+    box-shadow: 0 8px 15px rgb(0 0 0 / 20%);
+    width: 87%;
+    padding-bottom: 4%;
+    margin-right: auto;
+    border-radius: 15px;
+    margin-top: 1%;
+    /*background-image: url(/images/bg.png);*/
+    background-color: white;
+    margin-left: auto;
+    padding-top: 1%;
+}
+
+.dayTitle {
+    font-family: Mulish, sans-serif;
+    font-size: 45px;
+    padding-bottom: 1%;
+    margin-left: 2%;
+    background: linear-gradient(180deg, #1fc295, #87f0d2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dayInputs {
+    display: flex;
+    justify-content: center;
+}
+
+.addIngrToList {
+
+}
+
+.dayInput {
+    font-weight: 800;
+    width: 85%;
+    border-radius: 15px;
+    margin-top: 1%;
+    outline: none;
+    padding: 12px 17px;
+    box-shadow: 0 0 15px #6bc7ad;
+    font-family: Mulish, sans-serif;
+    border: none;
+    font-size: 16px;
+}
+
+#addRecipeList {
+    font-family: Mulish, sans-serif;
+    padding: 1%;
+    display: none;
+    position: fixed;
+    width: 480px;
+    height: 550px;
+    background-color: white;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    z-index: 999;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+}
+
+.close-adding_3 {
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    cursor: pointer;
+}
+
+.dayTitleBlock {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#saveListMain {
+    margin-left: 2%;
+    margin-right: 2%;
+    right: 8%;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    box-shadow: 0 16px 32px 0 rgb(0 40 120 / 35%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+#deleteListMain {
+    margin-left: 2%;
+    margin-right: 2%;
+    right: 17%;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    box-shadow: 0 16px 32px 0 rgb(0 40 120 / 35%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+#deleteListMain:hover {
+    outline: none;
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+
+
+#viewCheckList {
+    margin-left: 2%;
+    margin-right: 2%;
+    right: 25%;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: white;
+    box-shadow: 0 16px 32px 0 rgb(0 40 120 / 35%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+#viewCheckList:hover {
+    outline: none;
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+
+.mobileChecklistButtons {
+    margin-left: 3%;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addRecipeListTitle {
+    word-break: break-word;
+    margin-left: 2%;
+    font-size: 45px;
+    background: linear-gradient(180deg, #1fc295, #87f0d2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grcolor {
+    background: linear-gradient(180deg, #1fc295, #87f0d2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+#saveListMain:hover {
+    outline: none;
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}
+
+.dayForms {
+    font-family: Mulish, sans-serif;
+    width: 33%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonCheckListStyles {
+    cursor: pointer;
+    height: 42px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    border-radius: 40px;
+    padding-left: 17px;
+    padding-right: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    border: none;
+
+
+    /*text-decoration: none;*/
+    /*display: inline-block;*/
+    line-height: 40px;
+    /*border: none;*/
+    /*font-family: 'Montserrat', sans-serif;*/
+    /*font-size: 15px;*/
+    /*text-transform: uppercase;*/
+    /*text-align: center;*/
+    /*font-weight: 600;*/
+    /*color: #524f4e;*/
+    /*background: white;*/
+    /*box-shadow: 0 8px 15px rgb(0 0 0 / 10%);*/
+    /*transition: .2s;*/
+
+    width: 15%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.buttonCheckListStyles:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    letter-spacing: 3px;
+}
+
+.checkListButtons {
+    margin-top: 2%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pickRecipe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5%;
+}
+
+.pickCols {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#informModalMain{
+    height: 70%;
+    margin-top: 3%;
+ }
+
+#informModal {
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow-y: overlay;
+    overflow-x: hidden;
+}
+
+#informModal::-webkit-scrollbar {
+    width: 10px;
+}
+
+#informModal::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 10px;
+}
+
+#informModal::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #5BCAFF, #55EFCB);
+}
+
+.pickInfo {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+}
+
+.recipeNameEnter {
+    word-break: break-word;
+    margin-left: 2%;
+    font-size: 25px;
+    font-weight: 800;
+    color: #1fc295;
+}
+
+.recipeIngestionEnter {
+    word-break: break-word;
+    margin-left: 2%;
+    font-size: 15px;
+    font-weight: 800;
+    color: #1fc295;
+}
+
+.setThisToList {
+    transition: .2s;
+    cursor: pointer;
+    margin-left: 4%;
+}
+
+.setThisToList:hover {
+    transform: scale(1.15);
+}
+
+.pickInput {
+    font-family: Mulish, sans-serif;
+    outline: none;
+    box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+    border: none;
+    border-radius: 15px;
+
+    font-size: 20px;
+    padding: 1.5% 2.5%;
+    margin-top: 2%;
+}
+
+
+#toTop {
+     width:100px;
+     text-align:center;
+     position:fixed;
+     bottom:15px;
+     right:15px;
+     cursor:pointer;
+     display:none;
+    transition: 0.2s;
+ }
+
+#toTop:hover {
+    transform: scale(1.15);
+}
+
+#EditListTitles {
+    width: 87%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    /*background-image: url(/images/bg.png);*/
+    background-color: white;
+    margin-top: 1%;
+
+    display: flex;
+    align-items: center;
+}
+
+#newListName {
+    border: none;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    font-family: Mulish, sans-serif;
+    outline: #1fc295;
+    font-weight: 800;
+    border-radius: 15px;
+    width: 55%;
+    margin-left: 1%;
+    font-size: 25px;
+    height: 40%;
+    padding: 0.5% 1%;
+}
+
+
+.echo_Day {
+    font-weight: 900;
+    font-family: Mulish, sans-serif;
+    width: 87%;
+    height: inherit;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    /*background-image: url(/images/bg.png);*/
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.echo_DayTitle {
+    margin-top: 1%;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.echo_DayFeed {
+    flex-direction: column;
+    padding-bottom: 2%;
+    margin-top: 1%;
+    display: flex;
+    margin-left: 1%;
+
+    border-top: 2px solid #55EFCB;
+    /*background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);*/
+    border-image-slice: 1;
+}
+
+
+.echo_Ingreds {
+    margin-left: 2%;
+    display: flex;
+
+    overflow-y: overlay;
+    overflow-x: hidden;
+    width: 20%;
+
+    font-size: 14px;
+}
+
+
+.echo_Ingreds::-webkit-scrollbar {
+    width: 10px;
+}
+
+.echo_Ingreds::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 10px;
+}
+
+.echo_Ingreds::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #5BCAFF, #55EFCB);
+}
+
+.echo_Content {
+    width: 100%;
+    display: flex;
+}
+
+.echo_Algo {
+    width: 50%;
+    margin-left: 10%;
+    font-size: 14px;
+    text-align: center;
+
+    margin-top: -1%;
+
+}
+
+
+.printThisList {
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 30px;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #35be97 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    font-family: Mulish, sans-serif;
+    font-size: 14px;
+    font-weight: 250;
+    color: white;
+    box-shadow: 0 16px 32px 0 rgb(0 40 120 / 35%);
+    transition: .5s;
+    cursor: pointer;
+}
+
+.recipeIngestionEnter_mini {
+    font-size: 15px;
+}
+
+.printThisList:hover {
+    outline: none;
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+    transform: translateY(-2px);
+}
+
+.printThisListModal {
+    margin-left: 18%;
+}
+
+#ModalPrint{
+    font-family: Mulish, sans-serif;
+    /*background-image: url(/images/bg.png);*/
+    background-color: white;
+    display: none;
+    position: fixed;
+    width: 540px;
+    height: max-content;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    border-radius: 30px;
+    z-index: 999;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    padding: 1% 2%;
+    flex-direction: column;
+}
+
+.needOl {
+    margin-top: .2%;
+}
+.needLi {
+    margin-top: 0.2%;
+    font-weight: 800;
+
+}
+
+
+
+.printPage {
+    font-family: Mulish, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    /*background-image: url(/images/bg.png);*/
+    background-color: white;
+    height: 780px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 1%;
+}
+
+.printPageTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.printPageTitleH1 {
+    color: #1fc295;
+    font-size: 50px;
+}
+
+.printAuthor {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.printProducts {
+    width: 40%;
+    height: 32%;
+}
+
+.printAlgo {
+    width: 60%;
+}
+
+.dayContent {
+    display: flex;
+    width: 100%;
+    height: 31%;
+    /*padding-bottom: 1.5%;*/
+    font-size: 13px;
+
+}
+
+.printDayName {
+    text-decoration: underline;
+    margin-top: 0.7%;
+    padding-bottom: 0.2%;
+}
+
+.printPageMargin {
+    margin-top: 1.5%;
+}
+
+.printIngreds {
+    margin-top: 0.3%;
+    margin-left: 1%;
+}
+
+.printAlgoText {
+    font-size: 12px;
+    width: 70%;
+}

@@ -1,0 +1,280 @@
+#Login {
+    animation: 0.5s ease 0s 1 slideInFromLeft;
+    width: 450px;
+    height: 500px;
+
+    background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    margin: 1.5% auto auto;
+    padding: 2.2%;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+#logInput {
+    margin-top: 30px;
+    width: 400px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+
+
+#logInput:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    letter-spacing: 3px;
+}
+
+
+
+.loginput {
+    box-shadow: 0 4px 11px rgb(0 0 0 / 10%);
+    background: #d8effc;
+    font-family: Mulish, sans-serif;
+    padding: 20px;
+    margin-top: 3%;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    width: 90%;
+    height: 10%;
+    font-size: 18px;
+}
+
+#logForm {
+    margin-top: 3%;
+}
+
+
+
+#mainBlock {
+    background-color: white;
+    box-shadow: 0 0 40px #6bc7ad;
+    margin: 0.5% auto 5%;
+
+    animation: 0.4s ease 0s 1 slideInFromLeft;
+
+    width: 75%;
+    height: 800px;
+
+    border-radius: 35px;
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#registerImg {
+    background: url(/images/backgrRegister.jpg) center no-repeat;
+    background-size: cover;
+
+    width: 48%;
+    border-radius: inherit;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 0 25px #6bc7ad;
+}
+
+#registerImgInfo {
+    transition: .4s;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(16px);
+    margin-top: 9%;
+
+    width: 65%;
+    height: 75%;
+    border-radius: 15px;
+}
+
+#registerImgInfo:hover {
+    transform: scale(1.03);
+}
+
+.textingDesc {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.textingDescMain {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    margin-top:9px;
+}
+
+.authDesc {
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.textingDescMini {
+    margin-top: 9px;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#registerBlurInfo {
+    color: white;
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 8%;
+    margin-top: 8%;
+}
+
+#registerLink {
+    margin-top: 65%;
+    display: flex;
+    flex-direction: column;
+}
+
+#button {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    border: none;
+    background: none;
+    color: white;
+}
+
+.linkDeco {
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#button {
+    text-decoration: none;
+}
+
+
+.nonUnderline {
+    text-decoration: none;
+    color: white;
+}
+
+
+.linkDeco:hover {
+    text-decoration: underline;
+}
+
+#login {
+    width: 52%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+}
+
+
+
+#h1Header {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.login_input {
+    font-size: 16px;
+    padding: 15px;
+    display: block;
+    width: 430px;
+    border: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+.login_input:focus ~ label, .login_input:valid ~ label {
+    top: -15px;
+    font-size: 14px;
+    color: #5264AE;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
+
+}
+
+.login_label {
+    font-family: 'Montserrat', sans-serif;
+    color: #999;
+    font-size: 18px;
+    position: absolute;
+    pointer-events: none;
+    left: 10px;
+    top: 15px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 430px;
+}
+.bar:before, .bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+    left: 50%;
+}
+.bar:after {
+    right: 50%;
+}
+
+.login_input:focus ~ .bar:before,
+.login_input:focus ~ .bar:after {
+    width: 50%;
+}
+
+
+.showBtn, .showBtn2, .showBtn3 {
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+
+

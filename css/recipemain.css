@@ -1,0 +1,586 @@
+#echo_RecipeName {
+    width: 100%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-top: 10px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.echo_recipeh1 {
+    font-size: 45px;
+    color: #1fc295;
+}
+
+.echo_recipeType {
+    font-size: 20px;
+}
+
+.echo_recipeTime {
+    color: gray;
+}
+
+.echo_recipeAuthor {
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.echo_recipeAuthor {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#recipeBack {
+    padding-bottom: 15%;
+    width: 87%;
+    background: white;
+    margin: 1% auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe_echo_desc {
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+.recipe_desc_H3 {
+    font-size: 25px;
+    color: #1fc295;
+    text-align: center;
+}
+
+.recipe_desc_H2 {
+    font-size: 30px;
+    color: #1fc295;
+    text-align: center;
+}
+
+.recipe_desc_text {
+    text-align: center;
+    font-size: 21px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.echo_recipeBlockDesc {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.recipeImage {
+    transition: 0.2s;
+    width: 40%;
+    margin: 2% 5% 2% 2%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recipeImage:hover {
+    transform: scale(1.1);
+}
+
+
+
+.recipeDivider,
+.recipeDivider:before,
+.recipeDivider:after {
+    content: "";
+    background: #9FFFFF;
+    display: block;
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    position: absolute;
+    animation: anim-hr 6s linear infinite;
+    border: 0;
+    overflow: visible;
+}
+.recipeDivider:before {
+    left: -32px;
+}
+.recipeDivider:after {
+    left: 32px;
+}
+.recipeDivider {
+    position: relative;
+    margin: 30px auto;
+}
+
+@keyframes anim-hr {
+    0% {
+        background: #9FFFFF;
+    }
+    50% {
+        background: #1fc295;
+    }
+    100% {
+        background: #9FFFFF;
+    }
+}
+
+#recipeBlocksMain_ingreds {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.recipe_ingred_block {
+    transition: 0.2s;
+    cursor: pointer;
+    margin-top: 1%;
+    width: 250px;
+    height: 270px;
+    margin-left: 0.6%;
+    margin-right: 0.6%;
+    padding: 1%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+    border-radius: 15px;
+}
+
+.recipe_ingred_block:hover {
+    transform: scale(1.05);
+}
+
+.imgIngredEcho {
+    height: inherit;
+}
+
+.recipe_block_img_start {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.recipe_block_desc_end {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+}
+
+.recipeblockingredstyle {
+    font-size: 20px;
+    word-break: break-word;
+}
+
+.recipeblockingredstyle_dose {
+    font-size: 18px;
+    margin-top: 1%;
+}
+
+.recipeblockingredstyle_none {
+    font-size: 18px;
+    margin-top: 1%;
+    color: gray;
+}
+
+ #recipeAlgorithmBlock {
+     width: 95%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 5%;
+ }
+
+.stepDataBlock {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    box-shadow: 0 0 5px #6bc7ad;
+    border-radius: 10px;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5%;
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.stepData_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+
+.stepData_text {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Stepname {
+    color: #1fc295;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.StepData {
+    font-size: 20px;
+    word-break: break-word;
+}
+
+.recipeItemEchoPhoto {
+    width: 70%;
+    transition: 0.2s;
+}
+
+.recipeItemEchoPhoto:hover {
+    transform: scale(1.05);
+}
+
+body::-webkit-scrollbar {
+    width: 20px;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #5BCAFF, #55EFCB);
+}
+
+#ReviewsMain {
+    padding-bottom: 10px;
+    width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.reviewsh3 {
+    font-size: 30px;
+    color: #1fc295;
+}
+
+.recipeAuthorURL {
+    color: black;
+}
+
+#ReviewText {
+    box-shadow: 0 0 5px #6bc7ad;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 1%;
+    width: 65%;
+    height: 200px;
+    resize: none;
+
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+#ReviewText::-webkit-scrollbar {
+    width: 20px;
+}
+
+#ReviewText::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #f9f9fd;
+    border-radius: 20px;
+}
+
+#ReviewText::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg, #5BCAFF, #55EFCB);
+}
+
+
+
+.reviewTextBlock {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#sendReview {
+    font-size: 20px;
+    width: 20%;
+    height: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin: 5px 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    border: none;
+    cursor: pointer;
+}
+
+#sendReview:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    letter-spacing: 3px;
+}
+
+.reviewBlock {
+    box-shadow: 0 0 5px #6bc7ad;
+    border-radius: 5px;
+    padding-left: 1%;
+    width: 100%;
+    margin-top: 2%;
+    padding-top: 0.5%;
+    padding-bottom: 1%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewTop {
+    display: flex;
+    align-items: center;
+}
+
+.reviewAuthor {
+    font-size: 25px;
+    margin-right: 1%;
+    color: black;
+}
+
+.reviewDate {
+    margin-left: 1%;
+    color: gray;
+}
+
+.reviewBottom {
+    margin-top: 0.2%;
+    font-size: 18px;
+    word-break: break-word;
+}
+
+.recipeBlock_profile_saved {
+    background: white;
+    width: 29%;
+    height: 350px;
+    margin-left: 1.6%;
+    margin-top: 2%;
+    margin-right: 0;
+    border: 8px solid white;
+
+    flex: 33%;
+    max-width: 31%;
+    transition: 0.2s;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 2%;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+.recipeBlock_profile_saved:hover {
+    transform: scale(1.05);
+}
+
+.recipeBlock_profile_onpage {
+    background: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height: 450px;
+    margin-top: 2%;
+    border: 8px solid white;
+    transition: 0.2s;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 10;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 2%;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+.recipeBlock_profile_onpage:hover {
+    transform: scale(1.05);
+}
+
+#main_Links {
+    width: 100%;
+    background: white;
+    border-radius: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    margin-top: 1%;
+}
+
+.getButton {
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin: 5px 10px;
+    font-size: 11px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    border: none;
+}
+
+.getButton:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    letter-spacing: 3px;
+}
+
+.recipeViews {
+    margin-top: 5px;
+}
+
+#informationBlock {
+    width: 87%;
+    background-color: white;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+    margin: 1% auto;
+    padding: 1.5% 1%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Nunito', sans-serif;
+}
+
+.informationH1 {
+    color: #1fc295;
+    font-size: 45px;
+}
+
+.informationBlockFlex {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+}
+
+.infoText {
+    width: 50%;
+    word-break: break-word;
+    padding-right: 3%;
+}
+
+.infoLinks {
+    width: 50%;
+    word-break: break-word;
+    padding-right: 2%;
+}
+
+.infoTextSpan {
+    font-size: 20px;
+}
+
+.infoLinks {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.linksHeader {
+    font-size: 25px;
+    color: #1fc295;
+    font-weight: 900;
+}
+
+.linkColor {
+    color: #1fc295;
+}
+
+@media only screen and (min-device-width : 200px) and (max-device-width : 500px) {
+    .recipeAuthorURL {
+        font-size: 25px;
+    }
+
+    .recipesList_name {
+        font-size: 15px;
+    }
+
+    .echo_recipeh1 {
+        font-size: 40px;
+    }
+    #echo_RecipeName {
+        padding-bottom: 4%;
+        padding-top: 4%;
+    }
+    .echo_recipeTime {
+        font-size: 25px;
+    }
+
+    .recipeViews {
+        font-size: 30px;
+    }
+
+    #recipeBack {
+        width: 95%;
+    }
+        .Stepname {
+            font-size: 35px;
+        }
+
+    .StepData {
+        font-size: 30px;
+    }
+
+}

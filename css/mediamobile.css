@@ -1,0 +1,252 @@
+#mobileLogin {
+    display: none;
+    width: 95%;
+    background: white;
+    border-radius: 20px;
+    height: 1300px;
+
+    box-shadow: 0 0 40px #6bc7ad;
+    animation: 0.4s ease 0s 1 slideInFromLeft;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    flex-direction: column;
+}
+
+#mobileDesc {
+    width: 100%;
+    height: 30%;
+    box-shadow: 0 0 25px #6bc7ad;
+    border-radius: inherit;
+    background-size: cover;
+    background: url(/images/backgrRegister.jpg) center no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mobileBlurMainBlock {
+    background: red;
+    width: 92%;
+    height: 88%;
+    border-radius: inherit;
+
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(16px);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Nunito', sans-serif;
+}
+
+.mobileTitle {
+    margin-top: 5%;
+    font-size: 60px;
+}
+
+.mobileBlurDesc {
+    margin-top: 2%;
+    font-size: 37px;
+    color: white;
+}
+
+.mobileBlurDescLink {
+    font-size: 28px;
+    color: white;
+}
+
+.mobileTextingDesc {
+    font-size: 25px;
+    margin-top: 5%;
+}
+
+
+#mobileLoginForms {
+    margin-top: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.login_input_mobile {
+    height: 60px;
+    padding: 25px;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 35px;
+    outline: none;
+    width: 93%;
+    font-size: 45px;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 2%;
+}
+
+
+.authDescMobile {
+    font-size: 45px;
+    font-family: 'Nunito', sans-serif;
+    padding-bottom: 1%;
+}
+
+.mobile_group {
+    padding-bottom: 7%;
+    width: 85%;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*margin-top: 3%;*/
+    /*width: 100%;*/
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*flex-direction: column;*/
+}
+
+
+#logInputMobile {
+    font-size: 40px;
+    margin-top: 7%;
+    width: 80%;
+    height: 100px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#logInputMobile {
+    background-position: right center;
+    transform: translateY(-2px);
+    letter-spacing: 3px;
+}
+
+
+
+#regInputMobile {
+    font-size: 40px;
+    margin-top: 7%;
+    width: 80%;
+    height: 100px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    background-image: linear-gradient(to right, #87f0d2 0%, #1fc295 51%, #87f0d2 100%);
+    background-size: 200% auto;
+    box-shadow: 0 0 20px rgb(0 0 0 / 10%);
+    transition: .5s;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#regInputMobile {
+    background-position: right center;
+    transform: translateY(-2px);
+    letter-spacing: 3px;
+}
+
+
+.group_mobile {
+    width: 80%;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+
+@media only screen and (min-device-width : 200px) and (max-device-width : 500px) {
+    #leftBar {
+
+    }
+
+    #notes .note-item {
+        width: 500px;
+        max-height: 35em;
+
+    }
+
+    #notes {
+        font-size: 40px;
+    }
+
+    .object-alert {
+        font-size: 38px;
+    }
+
+    .close_button {
+        width: 55px;
+    }
+
+    #Header {
+        width: 95%;
+        height: 210px;
+    }
+
+    #mainBlock {
+        width: 95%;
+        margin: 1.5% auto 5%;
+        display: none;
+    }
+
+    #mobileLogin {
+        display: flex !important;
+
+    }
+
+
+    .logoImage {
+        height: 140px;
+    }
+
+    .logoFont {
+        margin-left: 10%;
+    }
+    .logoName {
+        font-size: 50px;
+    }
+
+    .textingDesc {
+        font-size: 22px;
+    }
+
+    .nonUnderline {
+        font-size: 17px;
+    }
+
+    .textingDescMain {
+        font-size: 25px;
+    }
+
+    .entrance {
+        margin-right: 5%;
+    }
+
+    .floating-button {
+        height: 60px;
+        line-height: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
+    
+
+
+}
